@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Blog esercitazione</title>
+<body>
+	<header> <h1>Aiutami con questa esercitazione!</h1> </header>
+<section>
+	<h2>Ascolta il File mp3!</h2>
+	<audio controls>
+		<source src="C:\Users\itali\Downloads\musica.mp3" type="audio/mpeg">
+	</audio>
+
+</section>
+<section>
+	<h2>Geolocalizzazione</h2>
+	<p id="demo">Trovo la tua posizione</h2><br>
+	<button onclick="getLocation()">Clicca!</button>
+	<script>
+	var x=document.getElementById("demo");
+	function getLocation(){
+	if (navigator.geolocation){
+	navigator.geolocation.getCurrentPosition(showPosition);
+	}else{
+	x.innerHTML= "Geolocalizzazione non supportata";
+		}
+	}
+	function showPosition(position){
+	x.innerHTML="Latitudine: " + position.coords.latitude + " Longitudine: " + position.coords.longitude; }
+	</script>
+
+
+</section>
+<a href="C:\Users\itali\esercitazione_22_09_2020\pagina2.html" alt="Collegamento a pagina precedente">Precedente</a>
+</body>
+</html>
+
+
