@@ -2,18 +2,11 @@
 <html>
 <title>Blog esercitazione</title>
 <body>
-	<header> <h1>Aiutami con questa esercitazione!</h1> </header>
+	<h1>Aiutami con l'esercitazione!</h1>
 <section>
-	<h2>Ascolta il File mp3!</h2>
-	<audio controls>
-		<source src="C:\Users\itali\Downloads\musica.mp3" type="audio/mpeg">
-	</audio>
-
-</section>
-<section>
-	<h2>Geolocalizzazione</h2>
-	<p id="demo">Trovo la tua posizione</h2><br>
-	<button onclick="getLocation()">Clicca!</button>
+	<h2>Mostrami la tua posizione!</h2>
+	<p id="demo">Dove ti trovi?</p>
+	<button onclick="getLocation()">Prova!</button>
 	<script>
 	var x=document.getElementById("demo");
 	function getLocation(){
@@ -21,16 +14,25 @@
 	navigator.geolocation.getCurrentPosition(showPosition);
 	}else{
 	x.innerHTML= "Geolocalizzazione non supportata";
-		}
+	}
 	}
 	function showPosition(position){
 	x.innerHTML="Latitudine: " + position.coords.latitude + " Longitudine: " + position.coords.longitude; }
 	</script>
 
-
 </section>
-<a href="C:\Users\itali\esercitazione_22_09_2020\pagina2.html" alt="Collegamento a pagina precedente">Precedente</a>
+<section>
+	<h2>Prova Canvas</h2>
+	<canvas id="Canvas" width="200" height="100"></canvas>
+	<script>
+	var c=document.getElementById("Canvas");
+	var ctx=c.getContext("2d");
+	ctx.font="30px Arial";
+	ctx.fillText("Ciao!",10,50);
+	</script>
+
+	
+</section>
+	<a href="C:\Users\itali\esercitazione_22_09_2020\pagina2.html" alt="Collegamento a pagina precedente">Precedente</a><br>
 </body>
 </html>
-
-
