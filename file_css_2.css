@@ -1,0 +1,27 @@
+h1{
+	border-top: 5px solid lightblue;
+	border-bottom: 5px solid lightblue;
+	text-align: center;
+}
+.cornice {
+  margin: auto;
+  border: 1px solid white;
+  width: 350px;
+  height: 250px;
+  float: center;
+}
+.cornice:hover {
+  width: 450px;
+  height: 350px;
+}
+.cornice img {
+  width: 100%;
+  height: 100%;
+}
+.contenitore{
+	text-align:center;
+}
+body section{
+	border-top: 5px solid lightblue;
+	border-bottom: 5px solid lightblue;
+}
