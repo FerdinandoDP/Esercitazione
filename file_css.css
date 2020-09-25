@@ -1,13 +1,14 @@
+  
 .titolo{
   			border-top: 5px solid lightblue;
 			border-bottom: 5px solid lightblue;
   			text-align: center;
 		}
 div article{
-  width: 800px;
+  width: 600px;
   border: 2px solid lightblue;
   text-align: left;
-  margin: 0px;
+  margin: auto;
 }
 section footer{
 	background-color: lightblue;
@@ -18,7 +19,15 @@ aside div{
 	position: absolute;
 	right: 0;
 	height:500px;
-	width: 400px;
+	width: 300px;
+	border: 2px solid lightblue;
+	text-align: left;
+}
+nav div{
+	position: absolute;
+	left: 0;
+	height:500px;
+	width: 300px;
 	border: 2px solid lightblue;
 	text-align: left;
 }
@@ -47,4 +56,50 @@ aside div{
 }
 .wrapper{
 	text-align: center;
+}
+.button_2 {
+	display: none;
+}
+@media all and (max-width : 480px){
+	div article{
+  		width: 200px;
+  		border: 2px solid lightblue;
+ 		text-align: left;
+  		margin: 0;
+	}
+	div article img{
+		width: 40%;
+		height: 40%;
+	}
+	.titolo{
+		background-color: lightblue;
+		height: 100px;
+	}
+	.titolo h1{
+		color: white;
+		text-align: left;
+	}
+	div nav{
+		display: none;
+	}
+	aside div{
+		position: absolute;
+		right: 0;
+		height:300px;
+		width: 200px;
+		border: 2px solid lightblue;
+		text-align: left;
+	}
+	.button_2 {
+		display: block;
+		background-color: white;
+		font-size: 24px;
+		text-align: center;
+	}
+	.box{
+		text-align: left;
+	}
+	.box, h1{
+		display: inline;
+	}
 }
